@@ -317,7 +317,8 @@ footer .div2 .copy_right{ margin-top: 30px; color: rgba(255,255,255,.4); }
 
 /* .sub .subBanner */
 .sub .subBanner{ color: #fff; background-image: url('../img/sub/sub01_1/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 420px; position: relative; overflow: hidden; }
-.sub .subBanner .inner{ flex-direction: column; display: flex ; text-align: center; justify-content: center; align-items: center; height: 100%; }
+.sub .subBanner .bg{ position: absolute; width: 100%; height: 100%; transform: scale(1.1); transition: transform .5s; }
+.sub .subBanner .inner{ position: relative; z-index: 2; flex-direction: column; display: flex ; text-align: center; justify-content: center; align-items: center; height: 100%; }
 .sub .subBanner .title{ font-size: 60px; font-weight: 700; }
 .sub .subBanner .title::after{ content: ''; margin: 10px auto; background-color: #fff; display: block; width: 80px; height: 2px; }
 .sub .subBanner .content{ line-height: 1.5em; font-weight: 700; margin-top: 20px; }
@@ -332,7 +333,7 @@ footer .div2 .copy_right{ margin-top: 30px; color: rgba(255,255,255,.4); }
 }
 
 /* .sub .subMenuList */
-.sub .subMenuListSec{ height: 0; display: flex; align-items: center; justify-content: center; }
+.sub .subMenuListSec{ position: relative; z-index: 9999; height: 0; display: flex; align-items: center; justify-content: center; }
 .sub .subMenuListSec .listDiv{ align-items: center; font-size: 18px; display: flex; background-color: #585958; border-radius: 10px; position: relative; z-index: 99; }
 .sub .subMenuListSec .listDiv .nowItemWrap{ border-right: 1px solid #d35a03; position: relative; }
 .sub .subMenuListSec .listDiv .nowItemWrap .nowItem{ display: flex; align-items: center; justify-content: space-between; min-width: 220px; gap: 10px;  border-radius: 10px 0 0 10px; min-width: 220px; border: none; background-color: var(--main-color); padding: 16px 20px; color: #fff; font-weight: 500; }
@@ -508,4 +509,24 @@ footer .div2 .copy_right{ margin-top: 30px; color: rgba(255,255,255,.4); }
     .sub01_4 .certificate_list > li{ width: calc(100% / 2); padding: 5px; }
     .sub01_4 .certificate_list .imgBox{ height: 60vw; }
     .sub01_4 .certificate_list .title{ font-size: 14px; }
+}
+
+/* .sub01_5  */
+.sub01_5 .subBanner{ background-image: url('../img/sub/sub01_5/subBannerBg.jpg'); }
+.sub01_5 .subContentWrap{ position: relative; } 
+.sub01_5 .subContentWrap::before{ content:''; display: block; width: 100%; height: 50%; position: absolute; background: linear-gradient(90deg, rgba(245, 162, 29, 0.00) 0%, #F5A21D 100%), #F0831E; left: 0; bottom: 0; }
+.sub01_5 .inner{ position: relative; z-index: 1; }
+.sub01_5 .contentWrap{ overflow: hidden; background-color: #fff; padding: 50px 70px; border-radius: 10px; }
+.sub01_5 .contentWrap .img{ width: 100%; }
+.sub01_5 .contentWrap .img.mo{ display: none; }
+
+@media screen and (max-width: 1250px) {
+    .sub01_5 .contentWrap{ padding: 30px; }
+}
+@media screen and (max-width: 950px) {
+
+}
+@media screen and (max-width: 650px) {
+    .sub01_5 .contentWrap .img.mo{ display: block; }
+    .sub01_5 .contentWrap .img.pc{ display: none; }
 }

@@ -71,7 +71,8 @@ const mainExampleTabHandler = () =>{
         $('#fullpage .exampleSec .tabList .item').parent('li').eq(clickIndex).find('.item').addClass('active');
         $('#fullpage .exampleSec .tabContentList > li').removeClass('active');
         $('#fullpage .exampleSec .tabContentList > li').eq(clickIndex).addClass('active');
-        swiper.update();
+        $('#fullpage .exampleSec .tabContentList.mo > li').eq(clickIndex).addClass('active');
+        if (swiper && typeof swiper.update === 'function') { swiper.update(); }
     })
 }
 
