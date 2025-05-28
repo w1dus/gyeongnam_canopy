@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; */
 
+.sub01_3 .scrollArti .historyDiv .history_list > li { opacity: 0; }
+  
+.sub01_3 .scrollArti .historyDiv .history_list > li.on { animation: fadeInRight 0.5s ease-in-out 0s 1 forwards running; }
+  
+/* 올라갈 때 붙는 클래스 (애니메이션 없음) */
+.sub01_3 .scrollArti .historyDiv .history_list > li.on.up-scroll { opacity: 1; animation: none !important; transform: translate3d(0,0,0) !important; }
 
 @keyframes fadeIn {
     0% {transform: translate3d(0px, 30px, 0px); }
