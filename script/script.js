@@ -79,6 +79,7 @@ const mainExampleTabHandler = () =>{
 const mainBanner = () => {
     var swiper = new Swiper("#fullpage .bannerSec .mySwiper", {
         loop : true,
+        effect: "fade",
         pagination: {
           el: "#fullpage .bannerSec .swiper-pagination",
           clickable: true, 
@@ -95,6 +96,16 @@ const rightSlideMenu = () => {
         $(this).toggleClass('on')
         $('.closeSec').toggleClass('show')
         $('.slideMenuSec').toggleClass('show')
+    })
+
+    $('.closeSec').click(function(){
+        $('.closeSec').removeClass('show')
+        $('.slideMenuSec').removeClass('show')
+        $('header .menuBtn').removeClass('on')
+    })
+
+    $('.slideMenuSec').click(function(e){
+        e.stopPropagation();
     })
 
     $('.slideMenuSec .menuList .item').click(function(){

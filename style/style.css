@@ -11,6 +11,7 @@
 @media screen and (max-width: 1250px) { } /* tablet */
 @media screen and (max-width: 650px) { } /* mobile */
 
+
 /* 스크롤 커스텀 */
 html::-webkit-scrollbar {width: 8px;}
 html::-webkit-scrollbar-thumb {background-color: var(--main-color); border-radius: 10px;}
@@ -60,6 +61,8 @@ p{ word-break: keep-all; }
 /* #fullpage{ padding-top: 74px; height: 100vh !important; } */
 #fullpage .section{ max-width: 100%; position: relative; overflow: hidden; }
 .fp-watermark{ display: none !important; }
+body:not(.fp-responsive) .fp-overflow{ max-height: unset !important; overflow-y: unset !important; }
+.fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow>.fp-overflow{ overflow-y: unset !important; }
 
 /* header */
 header{ width: 100%; position: fixed; left: 0; top: 0; padding: 20px 0; background-color: #fff; z-index: 99; }
