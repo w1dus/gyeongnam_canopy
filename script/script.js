@@ -96,4 +96,23 @@ const rightSlideMenu = () => {
         $('.closeSec').toggleClass('show')
         $('.slideMenuSec').toggleClass('show')
     })
+
+    $('.slideMenuSec .menuList .item').click(function(){
+
+        $('.slideMenuSec .menuList .item').not(this).closest('li').find('.rightSubMenuList').slideUp();
+        $('.slideMenuSec .menuList .item').not(this).removeClass('on');
+        $(this).toggleClass('on')
+        $(this).closest('li').find('.rightSubMenuList').slideToggle();
+    })
+
+    $('header .menuList .item').mouseenter(function () {
+        $('.subMenuList').stop(true, true).slideUp();
+        $(this).closest('li').children('.subMenuList').stop(true, true).slideDown();
+    });
+
+    $('header').on('mouseleave', function(){
+        $('.subMenuList').stop(true, true).slideUp();
+    });
+
+    
 }

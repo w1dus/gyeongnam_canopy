@@ -33,7 +33,7 @@
 }
 
 /* 게시판 공통 */
-.boardArti{ padding: 100px 0; }
+.boardArti{ padding: 20px 0; }
 
 /* 게시판 타이틀 */
 .boardArti .boardBanner{ margin-bottom: 50px; text-align: center; }

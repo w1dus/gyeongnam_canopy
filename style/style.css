@@ -37,7 +37,7 @@ a{ color:inherit; }
 
 .inner{ width:1200px; margin:0 auto; }
 
-.paging_box{ padding:10px 0; display:flex; align-items: center; justify-content: center; }
+.paging_box{ padding:20px 0; display:flex; align-items: center; justify-content: center; }
 
 select{
     -webkit-appearance: none; -moz-appearance: none;  appearance: none;
@@ -64,8 +64,13 @@ p{ word-break: keep-all; }
 /* header */
 header{ width: 100%; position: fixed; left: 0; top: 0; padding: 20px 0; background-color: #fff; z-index: 99; }
 header .inner{ display: flex; align-items: center; justify-content: space-between; }
-header .menuList{ font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 93px; }
+header .menuList{ display: flex; align-content: center; justify-content: center; text-align: center; font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 93px; }
+header .menuList > li{ display: flex; justify-content: center; position: relative; }
 header .menuBtn{ display: none; }
+
+header .menuList .subMenuList{ display: none; padding: 10px; position: absolute; width: 170px; top: calc(100% + 25px); background-color: #fff; }
+header .menuList .subMenuList .subItem{ font-weight: 500; display: block; padding: 10px 20px; transition: color .5s; }
+header .menuList .subMenuList .subItem:hover{ color: var(--main-color);} 
 
 @media screen and (max-width: 1250px) { 
     header .menuList{ gap: 50px; }
@@ -93,8 +98,13 @@ header .menuBtn{ display: none; }
     .closeSec.show{ opacity: 1; visibility: visible; }
     .slideMenuSec{ width: 90%; transition: right .5s; height: 100vh; max-width: 300px; right: -300px; display: block; position: fixed; background: #fff; padding: 80px 0 30px 0; z-index: 9; }
     .slideMenuSec.show{ right: 0; }
-    .slideMenuSec .menuList .item{ font-weight: 500; padding: 20px; font-size: 20px }
-    .slideMenuSec .menuList > li + li{ margin-top: 20px; }
+    .slideMenuSec .menuList .item{ width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: transparent; border: none; font-weight: 500; padding: 12px 20px; font-size: 20px }
+    .slideMenuSec .menuList .item .icon{ width: 10px; transition: transform .5s; }
+    .slideMenuSec .menuList .item.on .icon{ transform: rotate(180deg); }
+    .slideMenuSec .menuList > li{ border-bottom: 1px solid #efefef; } 
+
+    .slideMenuSec .menuList .rightSubMenuList{ display: none; padding: 10px 0; border-top: 1px solid #efefef; }
+    .slideMenuSec .menuList .rightSubMenuList .subItem{ display: block; padding:10px 20px; }
 }
 
 
@@ -317,7 +327,7 @@ footer .div2 .copy_right{ margin-top: 30px; color: rgba(255,255,255,.4); }
 
 /* .sub .subBanner */
 .sub .subBanner{ color: #fff; background-image: url('../img/sub/sub01_1/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 420px; position: relative; overflow: hidden; }
-.sub .subBanner .bg{ position: absolute; width: 100%; height: 100%; transform: scale(1.1); transition: transform .5s; }
+.sub .subBanner .bg{ background-size: cover; background-repeat: no-repeat; background-position: center; position: absolute; width: 100%; height: 100%; transform: scale(1.1); transition: transform .5s; }
 .sub .subBanner .inner{ position: relative; z-index: 2; flex-direction: column; display: flex ; text-align: center; justify-content: center; align-items: center; height: 100%; }
 .sub .subBanner .title{ font-size: 60px; font-weight: 700; }
 .sub .subBanner .title::after{ content: ''; margin: 10px auto; background-color: #fff; display: block; width: 80px; height: 2px; }
@@ -530,3 +540,162 @@ footer .div2 .copy_right{ margin-top: 30px; color: rgba(255,255,255,.4); }
     .sub01_5 .contentWrap .img.mo{ display: block; }
     .sub01_5 .contentWrap .img.pc{ display: none; }
 }
+
+
+
+/* .sub02  */
+.sub02 .subBanner .bg{ background-image: url('../img/sub/sub02_1/subBannerBg.jpg'); }
+.sub02 .tabList{ margin-bottom: 40px; display: flex; flex-wrap: wrap; border: .25px solid #B2B2B2; border-top: none; border-right: none;  }
+.sub02 .tabList > li{width: calc(100% / 4); }
+.sub02 .tabList .item{ text-align: center; padding: 10px; display: block; background-color: #F0F0F0; border-top: 1px solid #b2b2b2; border-right: 1px solid #b2b2b2; }
+.sub02 .tabList .item.active{ border-color: #585958; color: var(--main-color); font-weight: 700; background-color: #585958; }
+.sub02 .subDotTitle{display: flex; flex-direction: row-reverse; gap: 10px; justify-content: flex-end; }
+.sub02 .searchDiv{ margin-top: 6px; display: flex; border-radius: 4px; overflow: hidden; border: 1px solid #D9D9D9; }
+.sub02 .searchDiv .ipt{ padding: 10px 20px; border: none; }
+.sub02 .searchDiv .ipt:focus{ border: none !important; box-shadow:none !important }
+.sub02 .searchDiv .ipt::placeholder{ color: #999; }
+.sub02 .searchDiv .searchBtn{ flex-shrink: 0; padding: 11px; flex-shrink: 0; background-color: #585958; border: none; }
+.sub02 .itemList{ margin-top: 20px; display: flex; flex-wrap: wrap; width: calc(100% + 38px); margin-left: -19px; }
+.sub02 .itemList > li{ align-items: flex-start; display: flex; flex-direction: column; padding: 19px; width: calc(100% / 3); }
+.sub02 .itemList .item{ flex-grow: 1; height: 100%; word-break: break-all; box-shadow: 3px 8px 10px 0px rgba(0, 0, 0, 0.15); border: 1px solid transparent; transition: border .5s, box-shadow .5s; background-color: #fff; border-radius: 4px; overflow: hidden; }
+.sub02 .itemList .item:hover{ border: 1px solid var(--main-color);   }
+.sub02 .itemList .item .imgBox{ position: relative; height: 270px; overflow: hidden;   }
+.sub02 .itemList .item .imgBox .bg{ background-size: cover; transition: transform .5s; position: absolute; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; }
+.sub02 .itemList .item:hover .imgBox .bg{ transform:scale(1.1) }
+.sub02 .itemList .item .contentBox{ padding: 20px; }
+.sub02 .itemList .item .title{ border-bottom: 2px solid #e4e4e4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;  font-weight: 700; line-height: 1.5em; font-size: 18px; }
+.sub02 .itemList .item .dotList{ font-size: 14px; font-weight: 700; margin-top: 10px; line-height: 1.5em; }
+.sub02 .itemList .item .dotList > li{ display: flex; gap: 10px; }
+.sub02 .itemList .item .dotList > li + li{ margin-top: 10px; }
+.sub02 .itemList .item .dotList .label{ position: relative; padding-left: 10px; flex-shrink: 0; color: #7f7f7f; width: 68px;  }
+.sub02 .itemList .item .dotList .label::before{content:'・'; position: absolute; left: 0; }
+
+.sub02 .searchSection{ margin-top: 20px; font-weight: 700; line-height: 4em; font-size: 20px; }
+.sub02 .searchSection .orange{ color: var(--main-color); }
+
+.sub02 .noResultSec{ padding: 100px 0; }
+.sub02 .noResultSec .logo{ max-width: 70%; margin: 0 auto; display: block; }
+
+@media screen and (max-width: 1250px) {
+    .sub02 .itemList{ width: calc(100% + 10px); margin-left: -5px; }
+    .sub02 .itemList > li{ padding: 5px; }
+    .sub02 .itemList .item .imgBox{ height: 17vw; }
+    .sub02 .searchSection{ font-size: 18px; }
+}
+@media screen and (max-width: 950px) {
+    .sub02 .tabList{ font-size: 16px; }
+    .sub02 .itemList > li{ width: calc(100% / 2); }
+    .sub02 .itemList .item .imgBox{ height: 27vw; }
+}
+@media screen and (max-width: 650px) {
+    .sub02 .searchSection{ font-size: 16px; }
+    .sub02 .tabList{ font-size: 14px; }
+    .sub02 .itemList > li{ width: 100%; }
+    .sub02 .tabList .item{ padding: 10px 5px; }
+    .sub02 .itemList .item .imgBox{ height: 56vw; }
+    .sub02 .itemList .item .dotList .label{ width: 60px; }  
+}
+
+.sub02 .itemInfoDiv{ display: flex; gap: 50px; align-items: center; }
+.sub02 .itemInfoDiv .imgBox{ overflow: hidden; padding: 10px; flex-shrink: 0; width: 560px; height: 560px; border: 1px solid #d9d9d9; display: flex; align-items: center; justify-content: center; }
+.sub02 .itemInfoDiv .imgBox .img{ width: 100%; }
+.sub02 .itemInfoDiv .contentBox{ word-break: keep-all; flex-grow: 1;  }
+.sub02 .itemInfoDiv .contentBox .titleBox{ font-weight: 700; }
+.sub02 .itemInfoDiv .contentBox .titleBox .t1{ font-size: 16px; color:var(--main-color); }
+.sub02 .itemInfoDiv .contentBox .titleBox .t2{ font-size: 24px; line-height: 1.5em; }
+.sub02 .itemInfoDiv .contentBox .bar{ margin: 30px 0; height: 2px; background-color: #e4e4e4; } 
+.sub02 .itemInfoDiv .contentBox .dotList > li{ display: flex; gap: 10px; font-weight: 700; }
+.sub02 .itemInfoDiv .contentBox .dotList > li + li{ margin-top: 20px; }
+.sub02 .itemInfoDiv .contentBox .dotList .label{ flex-shrink: 0; position: relative; width: 120px; padding-left: 15px; color: #7F7F7F;  }
+.sub02 .itemInfoDiv .contentBox .dotList .label::before{ content:'・'; position: absolute; left: 0; } 
+.sub02 .itemInfoDiv .contentBox .content{ flex-grow: 1; }
+.sub02 .itemInfoDiv .contentBox .okBox{ display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+.sub02 .itemInfoDiv .contentBox .btnDiv{ margin-top: 56px; display: flex; gap: 10px; font-size: 18px; }
+.sub02 .itemInfoDiv .contentBox .btnDiv .btnItem{ color: #fff; width: 100%; padding: 25px 10px; border-radius: 4px; background-color: #48484B; border:none; }
+.sub02 .itemInfoDiv .contentBox .btnDiv .btnItem.orangeBtn{ background-color: var(--main-color); }
+
+.sub02 .listBackBtn{ display: block; border: none; margin: 30px auto; padding: 12px; border-radius: 10px; width: 100%; max-width: 300px; background-color: #222; color: #fff; text-align: center; font-weight: 700; font-size: 20px; }
+
+@media screen and (max-width: 1250px) {
+    .sub02 .itemInfoDiv .imgBox{ width: 50vw; height: 50vw; }
+    .sub02 .itemInfoDiv .contentBox .btnDiv .btnItem{ padding: 15px 10px; font-size: 16px; }
+    .sub02 .listBackBtn{ font-size: 18px; }
+}
+@media screen and (max-width: 950px) {
+    .sub02 .itemInfoDiv{ margin-top: 30px; gap: 30px; flex-direction: column; }
+    .sub02 .itemInfoDiv .imgBox{ width: 100%; height: calc(100vw - 8vw); }
+    .sub02 .itemInfoDiv .contentBox{ width: 100%; }
+    .sub02 .itemInfoDiv .contentBox .btnDiv{ margin-top: 30px; }
+}
+@media screen and (max-width: 650px) {
+    .sub02 .itemInfoDiv .contentBox .bar{ margin: 15px 0; }
+    .sub02 .itemInfoDiv .contentBox .dotList{ font-size: 14px; }
+    .sub02 .itemInfoDiv .contentBox .dotList .label{ width: 90px; }
+    .sub02 .itemInfoDiv .contentBox .btnDiv .btnItem.orangeBtn{ font-size: 14px; }
+    .sub02 .listBackBtn{ font-size: 16px; max-width: 250px; }
+}
+
+.sub02 .portfolioList{ margin-top: 20px; width: calc(100% + 14px); display: flex; flex-wrap: wrap; margin-left: -7px; }
+.sub02 .portfolioList > li{ display:flex; flex-direction: column; gap: 5px; align-items: flex-start; width: calc(100% / 3); padding: 7px; }
+.sub02 .portfolioList .item .imgBox{ border-radius: 4px 4px 0 0; overflow: hidden; height: 332px; position: relative; background: #222; }
+.sub02 .portfolioList .item .imgBox .bg{ background-size: cover; background-repeat: no-repeat; background-position: center; transition: transform .5s; width: 100%; height: 100%; position: absolute; left: 0; top: 0; }
+.sub02 .portfolioList .item:hover .imgBox .bg{ transform: scale(1.1); }
+.sub02 .portfolioList .item .titleDiv{ font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; padding: 16px 20px; border: 2px solid rgba(255, 110, 32, .2); border-radius: 0 0 4px 4px; }
+.sub02 .portfolioList .item .titleDiv .title{ overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.sub02 .portfolioList .item .titleDiv .arrow{ flex-shrink: 0; }
+
+@media screen and (max-width: 1250px) {
+    .sub02 .portfolioList .item .imgBox{ height: 24vw; }
+    .sub02 .portfolioList .item .titleDiv{ font-size: 16px; padding: 10px 15px; }
+    .sub02 .portfolioList .item .titleDiv .arrow{ width: 18px; }
+}
+@media screen and (max-width: 950px) {
+    .sub02 .portfolioList > li{ width: calc(100% / 2); }
+    .sub02 .portfolioList .item .imgBox{ height: 37vw; }
+}
+@media screen and (max-width: 650px) {
+    .sub02 .portfolioList > li{ width: 100%; }
+    .sub02 .portfolioList .item .imgBox{ height: 74vw; }
+}
+
+/* .sub04_2  */
+.sub04_2 .iconBox{ margin-top: 46px; display: flex; gap: 10px; line-height: 1.5em; font-size: 24px; font-weight: 700; }
+.sub04_2 .mapBox{ margin-top: 30px; height: 430px; }
+.sub04_2 .itemBox{ display: flex; flex-wrap: wrap; }
+.sub04_2 .itemBox .iconBox{ text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 20px; width: calc(100% / 3); }
+.sub04_2 .itemBox .iconBox + .iconBox{ border-left: 1px solid #D9D9D9; }
+
+@media screen and (max-width: 1250px) {
+    .sub04_2 .iconBox{ font-size: 20px; align-items: center; }
+    .sub04_2 .iconBox .icon{ width: 20px; height: auto; }
+}
+@media screen and (max-width: 950px) {
+    .sub04_2 .itemBox{ margin-top: 20px; }
+    .sub04_2 .itemBox .iconBox{ padding: 0; flex-direction: row; justify-content: flex-start; width: 100%; margin-top: 0; }
+    .sub04_2 .itemBox .iconBox + .iconBox{ margin-top: 10px; border: none; }
+}
+@media screen and (max-width: 650px) {
+    .sub04_2 .mapBox{ height: 50vw; }
+}
+
+/* .sub04_3 */
+.sub04_3 .applyInfoDiv{ text-align: right; line-height: 1.5em; font-weight: 700; word-break: keep-all; font-size: 24px; padding: 30px 0; border-bottom: 1px solid #E4E4E4; }
+.sub04_3 .formBox{ width: 600px; max-width: 100%; margin: 30px auto; } 
+.sub04_3 .formBox .formList .iptBox.radioIpt label input[type="radio"] + .text::before{ border-radius: 50%; }
+.sub04_3 .formBox .formList .iptBox.radioIpt label input[type="radio"]:checked + .text::before{ background-size: cover; background-repeat: no-repeat; background-position: center;  background-image: url('../img/boardImg/radio.jpg'); }
+.sub04_3 .submitBtn{ margin: 50px auto 0 auto; border-radius: 10px; font-size: 20px; font-weight: 700; width: 100%; background-color: #222; color: #fff; padding: 20px 10px; border: none; text-align: center;  }
+
+@media screen and (max-width: 1250px) {
+    .sub04_3 .applyInfoDiv{ font-size: 20px; }
+
+}
+@media screen and (max-width: 950px) {
+    .sub04_3 .applyInfoDiv{ font-size: 16px; }
+    .sub04_3 .submitBtn{ font-size: 18px; }
+}
+@media screen and (max-width: 650px) {
+    .sub04_3 .applyInfoDiv{ font-size: 14px; }
+    .sub04_3 .submitBtn{ font-size: 16px; }
+}
+
