@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/sub_script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+
+    <!-- 메인은 풀페이지 서브는 패럴렉스입니다 스크립트 꼭 넣어주세요 서브에만 /sub_script.js -->
+
+    <body>
+        <!--헤더 시작 { -->
+        <header>
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/header/logo.png" alt="경남캐노피" class="logo" />
+                </a>
+                <ul class="menuList">
+                    <li>
+                        <a href="./sub01_1.html">
+                            <div class="item">회사소개</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub01_1.html" class="subItem">회사개요</a></li>
+                            <li><a href="./sub01_2.html" class="subItem">인사말</a></li>
+                            <li><a href="./sub01_3.html" class="subItem">연혁</a></li>
+                            <li><a href="./sub01_4.html" class="subItem">인증현황</a></li>
+                            <li><a href="./sub01_4.html" class="subItem">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub02_1.html">
+                            <div class="item">제품소개</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub02_1.html" class="subItem">차양</a></li>
+                            <li><a href="./sub02_2.html" class="subItem">흡연부스</a></li>
+                            <li><a href="./sub02_3.html" class="subItem">버스승강장</a></li>
+                            <li><a href="./sub02_4.html" class="subItem">자전거 보관대</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub03_1.html">
+                            <div class="item">설치사례</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub03_1.html" class="subItem">차양</a></li>
+                            <li><a href="./sub03_2.html" class="subItem">흡연부스</a></li>
+                            <li><a href="./sub03_3.html" class="subItem">버스승강장</a></li>
+                            <li><a href="./sub03_4.html" class="subItem">자전거 보관대</a></li>
+                            <li><a href="./sub03_5.html" class="subItem">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub04_1.html">
+                            <div class="item">고객센터</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub04_1.html" class="subItem">공지사항</a></li>
+                            <li><a href="./sub04_2.html" class="subItem">찾아오는 길</a></li>
+                            <li><a href="./sub04_3.html" class="subItem">견적요청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub04_3.html">
+                            <div class="item">견적의뢰</div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="https://shop.g2b.go.kr/link/GMSF001_01/?ctrtItemMngNo=002282900_1060000008" target="_blank">
+                    <img src="./img/header/shop.png" alt="나라장터 쇼핑몰 바로가기" class="shop" />
+                </a>
+                <button type="button" class="menuBtn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </header>
+        <section class="slideMenuSec">
+            <ul class="menuList">
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">회사 소개</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub01_1.html" class="subItem">회사개요</a></li>
+                        <li><a href="./sub01_2.html" class="subItem">인사말</a></li>
+                        <li><a href="./sub01_3.html" class="subItem">연혁</a></li>
+                        <li><a href="./sub01_4.html" class="subItem">인증현황</a></li>
+                        <li><a href="./sub01_4.html" class="subItem">조직도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">제품소개</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub02_1.html" class="subItem">차양</a></li>
+                        <li><a href="./sub02_2.html" class="subItem">흡연부스</a></li>
+                        <li><a href="./sub02_3.html" class="subItem">버스승강장</a></li>
+                        <li><a href="./sub02_4.html" class="subItem">자전거 보관대</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">설치사례</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub03_1.html" class="subItem">차양</a></li>
+                        <li><a href="./sub03_2.html" class="subItem">흡연부스</a></li>
+                        <li><a href="./sub03_3.html" class="subItem">버스승강장</a></li>
+                        <li><a href="./sub03_4.html" class="subItem">자전거 보관대</a></li>
+                        <li><a href="./sub03_5.html" class="subItem">기타</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">고객센터</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub04_1.html" class="subItem">공지사항</a></li>
+                        <li><a href="./sub04_2.html" class="subItem">찾아오는 길</a></li>
+                        <li><a href="./sub04_3.html" class="subItem">견적요청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./sub04_3.html" class="item">
+                        견적의뢰
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="closeSec"></section>
+        <!-- } 헤더 끝 -->
+        <!-- 개인정보 처리방침 { -->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.           
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- } 개인정보 처리방침 끝-->
+
+
+        <main id="smooth-wrapper">
+            <article id="smooth-content">
+                <main class="sub sub02 sub02_2 sec_top">
+                    <section class="subBanner">
+                        <div class="bg" style="background-image: url('./img/sub/sub03_1/subBannerBg.jpg');"></div>
+                        <div class="inner">
+                            <div class="title">차양</div>
+                            <div class="content">
+                                Canopy
+                            </div>
+                        </div>
+                    </section>
+                    <!--메뉴 include로 넣어주세요-->
+                    <section class="subMenuListSec">
+                        <div class="inner">
+                            <div class="listDiv">
+                                <div class="nowItemWrap">
+                                    <button type="button" class="nowItem"><span class="text">설치사례</span><img src="./img/common/sub_menu_arrow.png" alt="화살표" class="icon"/></button>
+                                    <ul class="menuListBig">
+                                        <li><a href="./sub01_1.html" class="item">경남 캐노피 소개</a></li>
+                                        <li><a href="./sub02_1.html" class="item">제품소개</a></li>
+                                        <li><a href="./sub03_1.html" class="item">설치사례</a></li>
+                                        <li><a href="./sub04_1.html" class="item">고객센터</a></li>
+                                        <li><a href="./sub04_3.html" class="item">견적의뢰</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nowItemWrap now2">
+                                    <button type="button" class="nowItem"><span class="text">차양</span><img src="./img/common/sub_menu_arrow.png" alt="화살표" class="icon"/></button>
+                                    <ul class="menuListBig">
+                                        <li>
+                                            <a href="./sub03_1.html" class="item active">차양</a>
+                                        </li>
+                                        <li>
+                                            <a href="./sub03_2.html" class="item ">흡연부스</a>
+                                        </li>
+                                        <li>
+                                            <a href="./sub03_3.html" class="item ">버스승강장</a>
+                                        </li>
+                                        <li>
+                                            <a href="./sub03_4.html" class="item ">자전거보관대</a>
+                                        </li>
+                                        <li>
+                                            <a href="./sub03_5.html" class="item ">기타</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="subContentWrap">
+                        <div class="inner">
+                            <h1 class="subDotTitle search">
+                                제품 소개
+                            </h1>
+                            <section class="boardArti boardViewArti">
+                                <div class="inner">
+                                    <article class="infoBoxWrap">
+                                        <ul class="infoBoxList">
+                                            <li class="full">
+                                                <div class="infoBox">
+                                                    <div class="label">제목</div>
+                                                    <div class="txtBox viewBox">
+                                                        <div class="txt">
+                                                            제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다. 제목 영역입니다. 홈페이지가 오픈하였습니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="full">
+                                                <div class="infoBox">
+                                                    <div class="label">날짜</div>
+                                                    <div class="txtBox viewBox">
+                                                        <div class="txt">
+                                                            20-05-18 13:22
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                    
+                                    <div class="menuBox">
+                                        <ul class="menuList">
+                                            <li>
+                                                <a href="./basicList.html" class="item"><img src="./img/boardImg/list.png" alt="목록"/> <p class="txt">목록</p></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="item"><img src="./img/boardImg/corner-up-left.png" alt="답변"/> <p class="txt">답변</p></a>
+                                            </li>
+                                            <li>
+                                                <a href="./write.html" class="item"><img src="./img/boardImg/write.png" alt="글쓰기"/> <p class="txt">글쓰기</p></a>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="item"><img src="./img/boardImg/threedot.png" alt="편집"/> <p class="txt">편집</p></button>
+                                                <ul class="subMenu">
+                                                    <li><a href="#" class="item2">수정</a></li>
+                                                    <li><a href="#" class="item2">삭제</a></li>
+                                                    <li><a href="#" class="item2">복사</a></li>
+                                                    <li><a href="#" class="item2">이동</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                    
+                                    <article class="viewContent">
+                                        어떤 디자이너들은 명쾌한 방법론을 갈망하는 한편, 어떤 디자이너들은 창의적인 발상을 제약하는 사고 방식이라며 발끈하기도 한다. <br/>
+                                        하지만, 혼란스럽거나 즉흥적인 접근 방식은 바람직하다고 이야기하기 어렵다. <br/>
+                                        여기서 설명하고 있는 방법론은 제약적인 프로세스라기보다는 모든 상황에서 따라 할 수 있는 조리법처럼 받아들여지기를 바란다. <br/>
+                                        하지만 기계적으로 따라야만 하는 방법은 없다. <br/>
+                                        디자이너의 창의적인 번뜩임은 전기와 같고 그 방법은 전기를 가장 잘 이용할 수 있는 곳으로 전달하는 전력망 이라고 상상해보자.
+                                    </article>
+                    
+                                    <article class="viewAddArti">
+                                        <a href="#">
+                                            <div class="item file">
+                                                <p class="t1">File.jpeg(741.5K)</p>
+                                                <p class="t2">1회 다운로드 | DATE : 2020-05-05- 17:05:20</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="item link">
+                                                <p class="t1">http://www.link.com</p>
+                                                <p class="t2">34회 연결</p>
+                                            </div>
+                                        </a>
+                                    </article>
+                    
+                                    <article class="prevNextArti">
+                                        <div class="item">
+                                            <div class="label">
+                                                <img src="./img/boardImg/chevron-up.png" alt="이전글" />
+                                                이전글
+                                            </div>
+                                            <div class="titleBox">
+                                                <a href="#">
+                                                    이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.
+                                                    이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.이전글 제목입니다.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="label">
+                                                <img src="./img/boardImg/chevron-down.png" alt="다음글" />
+                                                다음글
+                                            </div>
+                                            <div class="titleBox">
+                                                <a href="#">
+                                                    다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.
+                                                    다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.다음글 제목입니다.
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                            <a href="./sub03_1.html" class="listBackBtn">목록으로</a>
+                        </div>
+                    </section>
+                </main>
+
+
+                <!-- 푸터 시작 :: 서브페이지에만 넣어주세요 -->
+                    <ul class="floatingList">
+                        <li>
+                            <a href="./sub02_1.html">
+                                <div class="item orange1">
+                                    <div class="icon" style="background-image: url('./img/floatingList/search.png');"></div>
+                                    <div class="text">제품검색</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/ebiz3066" target="_blank">
+                                <div class="item">
+                                    <div class="icon" style="background-image: url('./img/floatingList/blog.png');"></div>
+                                    <div class="text">블로그</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:055-385-0381">
+                                <div class="item gray">
+                                    <div class="icon" style="background-image: url('./img/floatingList/call.png');"></div>
+                                    <div class="text">Call</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <footer>
+                        <div class="inner">
+                            <div class="div1">
+                                <img src="./img/footer/logo.png" alt="경남캐노피" class="logo" />
+                                <a href="#" class="privacyPopupBtn">개인정보 처리방침</a>
+                            </div>
+                            <div class="div2">
+                                <ul class="infoList">
+                                    <li><div class="label">주소</div><div class="text">경남 양산시 새목2길 8-4 (어곡동 213-1)</div></li>
+                                    <li><div class="label">TEL</div><div class="text">055-385-0381</div></li>
+                                    <li><div class="label">FAX</div><div class="text">055-385-0382</div></li>
+                                    <li><div class="label">E-Mail</div><div class="text">ebiz3066@naver.com</div></li>
+                                </ul>
+                                <div class="copy_right">© gyeongnam canopy. ALL RIGHTS RESERVED.</div>
+                            </div>
+                        </div>
+                    </footer>
+                <!-- } 푸터 끝 -->
+
+            </article>
+        </main>
+       
+    
+
+    </body>
+</html>

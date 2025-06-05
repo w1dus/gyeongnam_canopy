@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"></script>
+        <!-- 패럴렉스 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    </head>
+
+    <!--
+        메인은 풀페이지 서브는 패럴렉스입니다
+        구조가 다르니 확인해주세요
+    -->
+
+    <body>
+        <!--헤더 시작 { 메인에만 main 클래스 추가  -->
+        <header class="main">
+            <div class="inner">
+                <a href="./index.html">
+                    <img src="./img/header/logo.png" alt="경남캐노피" class="logo" />
+                </a>
+                <ul class="menuList">
+                    <li>
+                        <a href="./sub01_1.html">
+                            <div class="item">회사소개</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub01_1.html" class="subItem">회사개요</a></li>
+                            <li><a href="./sub01_2.html" class="subItem">인사말</a></li>
+                            <li><a href="./sub01_3.html" class="subItem">연혁</a></li>
+                            <li><a href="./sub01_4.html" class="subItem">인증현황</a></li>
+                            <li><a href="./sub01_4.html" class="subItem">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub02_1.html">
+                            <div class="item">제품소개</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub02_1.html" class="subItem">차양</a></li>
+                            <li><a href="./sub02_2.html" class="subItem">흡연부스</a></li>
+                            <li><a href="./sub02_3.html" class="subItem">버스승강장</a></li>
+                            <li><a href="./sub02_4.html" class="subItem">자전거 보관대</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub03_1.html">
+                            <div class="item">설치사례</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub03_1.html" class="subItem">차양</a></li>
+                            <li><a href="./sub03_2.html" class="subItem">흡연부스</a></li>
+                            <li><a href="./sub03_3.html" class="subItem">버스승강장</a></li>
+                            <li><a href="./sub03_4.html" class="subItem">자전거 보관대</a></li>
+                            <li><a href="./sub03_5.html" class="subItem">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub04_1.html">
+                            <div class="item">고객센터</div>
+                        </a>
+                        <ul class="subMenuList">
+                            <li><a href="./sub04_1.html" class="subItem">공지사항</a></li>
+                            <li><a href="./sub04_2.html" class="subItem">찾아오는 길</a></li>
+                            <li><a href="./sub04_3.html" class="subItem">견적요청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub04_3.html">
+                            <div class="item">견적의뢰</div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="https://shop.g2b.go.kr/link/GMSF001_01/?ctrtItemMngNo=002282900_1060000008" target="_blank">
+                    <img src="./img/header/shop.png" alt="나라장터 쇼핑몰 바로가기" class="shop" />
+                </a>
+                <button type="button" class="menuBtn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </header>
+        <section class="slideMenuSec">
+            <ul class="menuList">
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">회사 소개</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub01_1.html" class="subItem">회사개요</a></li>
+                        <li><a href="./sub01_2.html" class="subItem">인사말</a></li>
+                        <li><a href="./sub01_3.html" class="subItem">연혁</a></li>
+                        <li><a href="./sub01_4.html" class="subItem">인증현황</a></li>
+                        <li><a href="./sub01_4.html" class="subItem">조직도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">제품소개</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub02_1.html" class="subItem">차양</a></li>
+                        <li><a href="./sub02_2.html" class="subItem">흡연부스</a></li>
+                        <li><a href="./sub02_3.html" class="subItem">버스승강장</a></li>
+                        <li><a href="./sub02_4.html" class="subItem">자전거 보관대</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">설치사례</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub03_1.html" class="subItem">차양</a></li>
+                        <li><a href="./sub03_2.html" class="subItem">흡연부스</a></li>
+                        <li><a href="./sub03_3.html" class="subItem">버스승강장</a></li>
+                        <li><a href="./sub03_4.html" class="subItem">자전거 보관대</a></li>
+                        <li><a href="./sub03_5.html" class="subItem">기타</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="item">
+                        <span class="text">고객센터</span>
+                        <img src="./img/common/sub_menu_arrow.jpg" alt="화살표" class="icon" />
+                    </button>
+                    <ul class="rightSubMenuList">
+                        <li><a href="./sub04_1.html" class="subItem">공지사항</a></li>
+                        <li><a href="./sub04_2.html" class="subItem">찾아오는 길</a></li>
+                        <li><a href="./sub04_3.html" class="subItem">견적요청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./sub04_3.html" class="item">
+                        견적의뢰
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="closeSec"></section>
+        <!-- } 헤더 끝 -->
+
+        <ul class="fullpage_anchors">
+            <li class="on"><a href="./index.html#Main"><span>Main</span></a></li>
+            <li><a href="./index.html#기업소개"><span>기업소개</span></a></li>
+            <li><a href="./index.html#제품소개"><span>제품소개</span></a></li>
+            <li><a href="./index.html#설치사례"><span>설치사례</span></a></li>
+            <li><a href="./index.html#인증현황"><span>인증현황</span></a></li>
+        </ul>
+
+
+        <!-- 개인정보 처리방침 { -->
+        <section class="privacyPopup" id="privacyPopup">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="titleBox">
+                        <span>개인정보 처리방침</span>
+                        <img src="./img/common/close-btn.png" alt="closeBtn" class="closeBtn">
+                    </div>
+                    <div class="contentBox">
+                        해당 홈페이지에 맞는 개인정보처리방침을 입력합니다.           
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- } 개인정보 처리방침 끝-->
+
+        <ul class="floatingList">
+            <li>
+                <a href="./sub02_1.html">
+                    <div class="item orange1">
+                        <div class="icon" style="background-image: url('./img/floatingList/search.png');"></div>
+                        <div class="text">제품검색</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.naver.com/ebiz3066" target="_blank">
+                    <div class="item">
+                        <div class="icon" style="background-image: url('./img/floatingList/blog.png');"></div>
+                        <div class="text">블로그</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="tel:055-385-0381">
+                    <div class="item gray">
+                        <div class="icon" style="background-image: url('./img/floatingList/call.png');"></div>
+                        <div class="text">Call</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <!--메인은 헤더, 푸터가 #fullpage안에 들어가있어요!-->
+        <main id="fullpage">
+            <section class="section bannerSec ani" id="section1" data-anchor="Main">
+                <div class="slideWrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="bg" style="background-image: url('./img/main/bannerSec/background1.jpg');"></div>
+                                    <div class="inner">
+                                        <h1 class="t1">환경을 <b>아름답게 만드는 기업</b></h1>
+                                        <div class="t2">경험이 만든 차양 기술의 차이<br/>공장 직영 생산 · 맞춤형 시공 전문 기업 경남캐노피</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="bg" style="background-image: url('./img/main/bannerSec/background2.jpg');"></div>
+                                    <div class="inner">
+                                        <div class="t1">원스톱 공정으로 <br/><b>고객만족을 추구하는 기업</b></div>
+                                        <div class="t2">경험이 만든 차양 기술의 차이<br/>공장 직영 생산 · 맞춤형 시공 전문 기업 경남캐노피</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="bg" style="background-image: url('./img/main/bannerSec/background3.jpg');"></div>
+                                    <div class="inner">
+                                        <div class="t1">특허기술과 디자인등록으로 <br/><b>최고의 기술력을 지향하는 기업</b></div>
+                                        <div class="t2">경험이 만든 차양 기술의 차이<br/>공장 직영 생산 · 맞춤형 시공 전문 기업 경남캐노피</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section canopySec ani" id="section2" data-anchor="기업소개">
+                <div class="inner">
+                    <img src="./img/main/canopySec/logo.png" alt="경남 캐노피" class="logo" />
+                    <div class="title">
+                        GYEONGNAM CANOPY  
+                    </div>
+                    <div class="content">
+                        나라장터 종합쇼핑몰 등록업체로 차양, 흡연부스, 버스승강장, 자전거보관대를 <br/>
+                        제작, 설치하는 관급자재 전문업체입니다
+                    </div>
+                </div>
+            </section>
+            <section class="section productSec ani" id="section3" data-anchor="제품소개">
+                <article class="sectionBg"></article>
+                <div class="inner">
+                    <h2 class="mainTitle">제품소개</h2>
+                    <div class="mainContent">
+                        공간의 품격을 높이고 사용자의 안전을 최우선으로 고려한 제품입니다. 
+                    </div>
+                    <ul class="imgList">
+                        <li>
+                            <a href="./sub02_1.html">
+                                <div class="imgBox">
+                                    <div class="bg" style="background-image: url('./img/main/productSec/img1.jpg');"></div>
+                                    <div class="contentBox">
+                                        <p class="underline">
+                                            <span class="ko">차양</span>
+                                            <span class="en">Canopy</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub02_2.html">
+                                <div class="imgBox">
+                                    <div class="bg" style="background-image: url('./img/main/productSec/img2.jpg');"></div>
+                                    <div class="contentBox">
+                                        <p class="underline">
+                                            <span class="ko">흡연부스</span>
+                                            <span class="en">Smoking Booth</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub02_3.html">
+                                <div class="imgBox">
+                                    <div class="bg" style="background-image: url('./img/main/productSec/img3.jpg');"></div>
+                                    <div class="contentBox">
+                                        <p class="underline">
+                                            <span class="ko">버스승강장</span>
+                                            <span class="en">Bus Stop</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub02_4.html">
+                                <div class="imgBox">
+                                    <div class="bg" style="background-image: url('./img/main/productSec/img4.jpg');"></div>
+                                    <div class="contentBox">
+                                        <p class="underline">
+                                            <span class="ko">자전거 보관대</span>
+                                            <span class="en">Bicycle Rack</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section exampleSec ani" data-anchor="설치사례">
+                <div class="inner">
+                    <h2 class="mainTitle">설치사례</h2>
+                    <div class="mainContent">
+                        최고의 기술과 최고의 품질로 고객만족을 실천한 제품입니다
+                    </div>
+                    <ul class="tabList">
+                        <li><button type="button" class="item active">차양</button></li>
+                        <li><button type="button" class="item ">흡연부스</button></li>
+                        <li><button type="button" class="item ">버스승강장</button></li>
+                        <li><button type="button" class="item ">자전거보관대</button></li>
+                    </ul>
+                    <!-- 
+                        <ul class="tabContentList">
+                            <li class="active">
+                                <div class="slideWrap">
+                                    <div class="swiper mySwiper tabContent">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="slideWrap">
+                                    <div class="swiper mySwiper tabContent">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="slideWrap">
+                                    <div class="swiper mySwiper tabContent">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="slideWrap">
+                                    <div class="swiper mySwiper tabContent">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="./sub03_1_view.html">
+                                                    <div class="item">
+                                                        <div class="imgBox">
+                                                            <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                                        </div>
+                                                        <div class="contentDiv">
+                                                            <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                            <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    -->
+                    <ul class="tabContentList ">
+                        <li class="active ">
+                            <ul class="tabContent">
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남w해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <ul class="tabContent">
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남w해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <ul class="tabContent">
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <ul class="tabContent">
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="imgBox">
+                                                <div class="bg" style="background-image: url('./img/main/exampleSec/example.jpg');"></div>
+                                            </div>
+                                            <div class="contentDiv">
+                                                <div class="title">남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피 남해주택 캐노피</div>
+                                                <img src="./img/main/exampleSec/right_arrow.png" alt="화살표" class="icon" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="./sub03_1.html" class="mainMoreView">
+                        시공사례 더보기 + 
+                    </a>
+                </div>
+            </section>
+            <section class="section logoSlideSec ani" data-anchor="인증현황">
+                <div class="inner">
+                    <div class="content">
+                        경남캐노피는 ISO 9001, 14001 , 45001 인증 및 <br/>
+                        다양한 특허기술 및 디자인등록으로 최고의 기술력을 지향하고 있습니다.
+                    </div>
+                    <div class="logoSlideBox">
+                        <ul class="logoList">
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo1.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo2.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo3.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo4.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo5.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo6.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo7.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo8.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo9.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo1.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo2.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo3.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo4.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo5.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo6.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo7.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo8.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo9.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo1.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo2.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo3.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo4.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo5.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo6.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo7.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo8.jpg" alt="로고" class="logo" />
+                            </li>
+                            <li>
+                                <img src="./img/main/logoSlideSec/logo9.jpg" alt="로고" class="logo" />
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./sub01_4.html" class="mainMoreView">
+                        인증현황 더보기 + 
+                    </a>
+                </div>
+            </section>
+            <section class="section fp-auto-height-responsive fp-auto-height" id="footer">
+                <footer>
+                    <div class="inner">
+                        <div class="div1">
+                            <img src="./img/footer/logo.png" alt="경남캐노피" class="logo" />
+                            <a href="#" class="privacyPopupBtn">개인정보 처리방침</a>
+                        </div>
+                        <div class="div2">
+                            <ul class="infoList">
+                                <li><div class="label">주소</div><div class="text">경남 양산시 새목2길 8-4 (어곡동 213-1)</div></li>
+                                <li><div class="label">TEL</div><div class="text">055-385-0381</div></li>
+                                <li><div class="label">FAX</div><div class="text">055-385-0382</div></li>
+                                <li><div class="label">E-Mail</div><div class="text">ebiz3066@naver.com</div></li>
+                            </ul>
+                            <div class="copy_right">© gyeongnam canopy. ALL RIGHTS RESERVED.</div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </main>
+
+       
+        
+       
+    
+
+        <!-- 푸터 시작 :: 서브페이지에만 넣어주세요 -->
+            <!-- <footer>
+                <div class="inner">
+                    <div class="div1">
+                        <img src="./img/footer/logo.png" alt="경남캐노피" class="logo" />
+                        <a href="#" class="privacyPopupBtn">개인정보 처리방침</a>
+                    </div>
+                    <div class="div2">
+                        <ul class="infoList">
+                            <li><div class="label">주소</div><div class="text">경남 양산시 새목2길 8-4 (어곡동 213-1)</div></li>
+                            <li><div class="label">TEL</div><div class="text">055-385-0381</div></li>
+                            <li><div class="label">FAX</div><div class="text">055-385-0382</div></li>
+                            <li><div class="label">E-Mail</div><div class="text">ebiz3066@naver.com</div></li>
+                        </ul>
+                        <div class="copy_right">© gyeongnam canopy. ALL RIGHTS RESERVED.</div>
+                    </div>
+                </div>
+            </footer> -->
+        <!-- } 푸터 끝 -->
+
+        <!--아래 스크립트문은 메인에만 넣어주세요-->
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {
+                responsiveWidth: 950,  
+                responsiveHeight: 600,
+                responsiveSlides: true,
+                fitToSection: false,
+                parallax: true, 
+                slidesNavigation:true,
+                scrollOverflow: true, 
+                menu: '.fullpage_anchors',
+                navigationPosition: 'left', 
+                anchors: ['Main','기업소개','제품소개', '설치사례', '인증현황'],
+                licenseKey: "L6EO6-9SMM9-K0PL6-TRJ7J-XATEL",
+                parallax: true,
+                beforeLeave: function(origin, destination, direction){
+                    var anchorLink = destination.anchor;
+
+                    // 메뉴 항목들에서 .on 제거
+                    document.querySelectorAll('.fullpage_anchors li').forEach(function(li){
+                        li.classList.remove('on');
+                    });
+
+                    // 해당 앵커에 대응하는 a 태그를 찾아 li에 .on 추가
+                    var activeLink = document.querySelector('.fullpage_anchors a[href$="#' + anchorLink + '"]');
+                    if(activeLink && activeLink.parentElement){
+                        activeLink.parentElement.classList.add('on');
+                    }
+                }
+
+            });
+        </script>
+    </body>
+</html>

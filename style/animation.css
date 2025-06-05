@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; */
+
+
+header.main{ animation: headerAni .5s ease-in-out 0s 1 forwards running; }
+
+@keyframes headerAni {
+    0% { opacity: 0; background: transparent; transform: translateY(-50px); }
+    100% { opacity: 1; background: #fff; transform: translateY(0);  }
+}
+
+.sub .subBanner .bg{ animation: bannerAni 3s ease-in-out 0s 1 forwards running;  }
+.sub .subBanner .title{ opacity: 0;  animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub .subBanner .content{ opacity: 0; animation: fadeIn 0.5s ease-in-out 0.5s 1 forwards running; }
+@keyframes bannerAni {
+    0% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+.sub01_3 .scrollArti .historyDiv .history_list > li { opacity: 0; }
+  
+.sub01_3 .scrollArti .historyDiv .history_list > li.on { animation: fadeInRight 0.5s ease-in-out 0s 1 forwards running; }
+  
+/* 올라갈 때 붙는 클래스 (애니메이션 없음) */
+.sub01_3 .scrollArti .historyDiv .history_list > li.on.up-scroll { opacity: 1; animation: none !important; transform: translate3d(0,0,0) !important; }
+
+
+#fullpage .bannerSec .item .t1{ opacity: 0; }
+#fullpage .bannerSec .swiper-slide-active .item .t1{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+#fullpage .bannerSec .item .t2{ opacity: 0; }
+#fullpage .bannerSec .swiper-slide-active .item .t2{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+
+#fullpage .canopySec .logo{ opacity: 0; }
+#fullpage .canopySec.on .logo{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+#fullpage .canopySec .title{ opacity: 0;} 
+#fullpage .canopySec.on .title{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+#fullpage .canopySec .content{ opacity: 0; }
+#fullpage .canopySec.on .content{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+#fullpage .mainTitle{ opacity: 0; }
+#fullpage .on .mainTitle{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+#fullpage .mainContent{ opacity: 0; }
+#fullpage .on .mainContent{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+#fullpage .productSec .imgList{ opacity: 0; }
+#fullpage .productSec.on .imgList{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+#fullpage .exampleSec .tabList{ opacity: 0; }
+#fullpage .exampleSec.on .tabList{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+#fullpage .exampleSec .tabContentList{ opacity: 0; }
+#fullpage .exampleSec.on .tabContentList{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+#fullpage .mainMoreView{ opacity: 0; }
+#fullpage .on .mainMoreView{ animation: fadeIn 0.5s ease-in-out 0.3s 1 forwards running; }
+
+#fullpage .logoSlideSec .content{ opacity: 0; }
+#fullpage .logoSlideSec.on .content{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub01_1 .subDotTitle{opacity: 0;}
+.sub01_1 .on .subDotTitle{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub01_1 .contentWrap{ opacity: 0; }
+.sub01_1 .on .contentWrap{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.sub01_2 .subDotTitle{opacity: 0;}
+.sub01_2 .on .subDotTitle{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub01_2 .contentBox{ opacity: 0; }
+.sub01_2 .on .contentBox{ animation: fadeIn 0.5s ease-in-out 0.1s 1 forwards running; }
+
+.sub01_4 .subDotTitle{opacity: 0;}
+.sub01_4 .on .subDotTitle{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub01_5 .subDotTitle{opacity: 0;}
+.sub01_5 .on .subDotTitle{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub01_5 .contentWrap{ opacity: 0; }
+.sub01_5 .on .contentWrap{ animation: fadeIn 0.5s ease-in-out 0.2s 1 forwards running; }
+
+
+.sub02 .subDotTitle{ opacity: 0; }
+.sub02 .on .subDotTitle{ animation: fadeInSmall 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub04_1 .subDotTitle{ opacity: 0; }
+.sub04_1 .on .subDotTitle{ animation: fadeInSmall 0.5s ease-in-out 0s 1 forwards running; }
+
+
+.sub04_2 .subDotTitle{ opacity: 0; }
+.sub04_2 .on .subDotTitle{ animation: fadeInSmall 0.5s ease-in-out 0s 1 forwards running; }
+
+.sub04_3 .subDotTitle{ opacity: 0; }
+.sub04_3 .on .subDotTitle{ animation: fadeInSmall 0.5s ease-in-out 0s 1 forwards running; }
+
+
+
+@keyframes fadeIn {
+    0% {transform: translate3d(0px, 30px, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeInSmall {
+    0% {transform: translate3d(0px, 10px, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeInDown {
+    0% {transform: translate3d(0px, -30px, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translate3d(30px, 0, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translate3d(-30px, 0, 0px); }
+    100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
